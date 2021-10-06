@@ -12,13 +12,25 @@
         tools:layout="@layout/fragment_main">
         <action
             android:id="@+id/action_mainFragment_to_chooserRecipientFragment"
-            app:destination="@id/chooserRecipientFragment" />
+            app:destination="@id/chooserRecipientFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_viewTransactionFragment"
-            app:destination="@id/viewTransactionFragment" />
+            app:destination="@id/viewTransactionFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <action
             android:id="@+id/action_mainFragment_to_viewBalanceFragment"
-            app:destination="@id/viewBalanceFragment" />
+            app:destination="@id/viewBalanceFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
     </fragment>
 
     <fragment
@@ -52,7 +64,7 @@
         android:name="com.suonk.testnavigationcomponent.ui.fragments.ViewBalanceFragment"
         android:label="fragment_view_balance"
         tools:layout="@layout/fragment_view_balance" />
-    
+
     <fragment
         android:id="@+id/viewTransactionFragment"
         android:name="com.suonk.testnavigationcomponent.ui.fragments.ViewTransactionFragment"
